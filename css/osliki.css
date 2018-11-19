@@ -1,0 +1,114 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+body{
+    background-color: #c0c0c0; /* Цвет фона веб-страницы */
+   } 
+.hidden {
+	display: none;
+}
+
+.logo {
+    background: url('../img/logo.png') center no-repeat;
+    box-sizing: content-box;
+    background-size: contain;
+    width: 63px;
+    height: 21px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.about_block {
+    background: right bottom no-repeat #154558;
+/*    height: 500px;*/
+    background-size: contain;
+}
+.imageoslik {
+	position	: relative;
+	width		: 100%; /* for IE 6 */
+	background: url('../img/figure3.png');
+	height: 100vh;
+	background-size: cover;	
+	color: white;
+	background-attachment: fixed;
+	position: relative;
+}
+.imageoslik h2 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 350%;
+}
+.imageoslik .cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(14, 47, 22, 0.36);
+    top: 0;
+    left: 0;
+	padding: 150px 20%;
+}
+.help {
+	width: 300px;
+    height: 300px;
+    background-color: #e2e2e2;
+    border-radius: 50%;
+    border: 9px solid #1f8221;
+    padding: 50px;
+    text-align: center;
+	color: black;
+	position: absolute;
+	right: 50px;
+	bottom: -50px;
+}
+.help:after {
+	content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    left: 0;
+    border: 45px solid transparent;
+    border-bottom: 38px solid #1f8221;
+    border-left: 20px solid #1f8221;
+}
+.navbar-osliki {
+	background-color: #1f8221;
+}
+.navbar-osliki .navbar-nav a {
+	color: white;
+}
+.navbar-osliki .navbar-nav a:hover {
+	background-color: #145415;
+}
+.navbar-osliki .navbar-nav a:focus {
+	background-color: #145415;
+}
+.finans {
+	padding: 25px;
+	text-align: center;
+}
