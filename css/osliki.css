@@ -112,3 +112,17 @@ h1 {
 	padding: 25px;
 	text-align: center;
 }
+.slyder h2 {
+	text-align: center;
+	color : green;
+	font-size: 300%
+}
+.slyder img{
+	width : 900px;
+	height : 450px;
+}
+.fond h2 {
+	padding-top : 100px ;
+	text-align: center;
+	font-size: 120%
+}
