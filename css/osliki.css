@@ -126,6 +126,7 @@ h1 {
 	text-align: center;
 	font-size: 120%
 }
+/*___________О НАС __________*/
 .about h2{
 	padding-top : 100px ;
 	text-align: center;
@@ -183,4 +184,56 @@ h1 {
 	border-radius: 10px;
 	margin-left: 80px;
 	margin-right : 75px;
+	margin-top : 30px;
+}
+/*__________НАШИ ОСЛИКИ___________*/
+.nosliki h2{
+	padding-top : 100px ;
+	text-align: center;
+	font-size: 400%
+}
+.wrap {
+display: flex;
+flex-direction: row;
+}
+    
+.catalog{
+flex: 1 0 70%;
+display: flex;
+flex-direction: row; /* расположение блоков слева-направо*/
+flex-wrap: wrap; /*заполнение до конца страницы и перенос блока*/
+align-items: stretch; /*выравнивание флекс элементов*/
+margin-left: 50px;
+}
+.cell {
+padding: 20px;
+flex: 0 0 calc( 35% - 30px );
+min-width: 300px;
+display: flex;
+flex-direction: row;
+}
+.cell_inside {
+flex: 1;
+padding: 15px;
+padding-left: 15px;
+min-height: 140px;
+}
+.cell_inside h2 {
+	text-align : center;
+}
+/*__________КОНТАКТЫ___________*/
+.cnct h2 {
+	text-align: center;
+	margin-top: 120px;
+	font-size: 350%;
+}
+.mesto h2 {
+	color: red;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 180%;
+}
+.map img{
+	width : 900px;
+	height : 450px;
 }
