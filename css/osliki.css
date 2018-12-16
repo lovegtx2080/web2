@@ -108,19 +108,57 @@ h1 {
 .navbar-osliki .navbar-nav a:focus {
 	background-color: #145415;
 }
+.navbar-osliki .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
 .finans {
 	padding: 25px;
 	text-align: center;
 }
-.slyder h2 {
-	text-align: center;
-	color : green;
-	font-size: 300%
+/*______________________________*/
+
+.swiper{
+margin:0 auto;
+display: table;
+
+}	
+.sl_ctr{
+position:relative;
+width: 900px;
+height: 378px;
+overflow:hidden;
 }
-.slyder img{
-	width : 900px;
-	height : 450px;
+
+.sldr{
+position:relative;
+width: 10000px;
+height: 300px;
+
 }
+.sldr img{
+float: left;
+margin:0 auto;
+}
+.prv_b, .nxt_b{
+position:absolute;
+top:160px;
+display:block;
+width:35px;
+height:35px;
+cursor:pointer;
+}
+.prv_b:hover, .nxt_b:hover{opacity:.6;}
+.prv_b{
+left:10px;
+background:url(img/b1b.png) no-repeat #fc0;
+}
+.nxt_b{
+right:10px;
+background:url(img/b2.png) no-repeat #fc0;
+}
+
+/*______________________________*/
+
 .fond h2 {
 	padding-top : 100px ;
 	text-align: center;
