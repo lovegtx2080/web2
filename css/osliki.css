@@ -50,13 +50,14 @@ h1 {
 }
 .imageoslik {
 	position	: relative;
-	width		: 100%; /* for IE 6 */
 	background: url('../img/figure3.png');
 	height: 100vh;
 	background-size: cover;	
 	color: white;
 	background-attachment: fixed;
-	position: relative;
+	background-position: center;
+	padding: 0;
+	margin-bottom: 75px;
 }
 .imageoslik h2 {
 	text-align: center;
@@ -64,13 +65,12 @@ h1 {
 	font-size: 350%;
 }
 .imageoslik .cover {
-	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(14, 47, 22, 0.36);
-    top: 0;
-    left: 0;
-	padding: 150px 20%;
+	padding-top: 15%;
+	padding-right: 15%;
+	padding-left: 15%;
 }
 .help {
 	width: 300px;
@@ -115,48 +115,22 @@ h1 {
 	padding: 25px;
 	text-align: center;
 }
+.finans img {
+	width: 100%;
+	max-width: 500px;
+}
 /*______________________________*/
-
-.swiper{
-margin:0 auto;
-display: table;
-
+.swiper-container img {
+	width: 100%;
+}
+.prisl h2{
+	text-align: center;
+	font-size: 4em;
+}
+.prisl {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }	
-.sl_ctr{
-position:relative;
-width: 900px;
-height: 378px;
-overflow:hidden;
-}
-
-.sldr{
-position:relative;
-width: 10000px;
-height: 300px;
-
-}
-.sldr img{
-float: left;
-margin:0 auto;
-}
-.prv_b, .nxt_b{
-position:absolute;
-top:160px;
-display:block;
-width:35px;
-height:35px;
-cursor:pointer;
-}
-.prv_b:hover, .nxt_b:hover{opacity:.6;}
-.prv_b{
-left:10px;
-background:url(img/b1b.png) no-repeat #fc0;
-}
-.nxt_b{
-right:10px;
-background:url(img/b2.png) no-repeat #fc0;
-}
-
 /*______________________________*/
 
 .fond h2 {
@@ -169,6 +143,13 @@ background:url(img/b2.png) no-repeat #fc0;
 	padding-top : 100px ;
 	text-align: center;
 	font-size: 400%
+}
+.about-block img{
+	width: 100%;
+}
+.about-block {
+	font-size: 2em;
+	margin-bottom: 40px;
 }
 .a {
   display: flex;
@@ -234,30 +215,14 @@ background:url(img/b2.png) no-repeat #fc0;
 display: flex;
 flex-direction: row;
 }
-    
-.catalog{
-flex: 1 0 70%;
-display: flex;
-flex-direction: row; /* расположение блоков слева-направо*/
-flex-wrap: wrap; /*заполнение до конца страницы и перенос блока*/
-align-items: stretch; /*выравнивание флекс элементов*/
-margin-left: 50px;
+.catalog .catalog-item img {
+	width: 100%;
 }
-.cell {
-padding: 20px;
-flex: 0 0 calc( 35% - 30px );
-min-width: 300px;
-display: flex;
-flex-direction: row;
+.catalog .catalog-item{
+	text-align: center;
 }
-.cell_inside {
-flex: 1;
-padding: 15px;
-padding-left: 15px;
-min-height: 140px;
-}
-.cell_inside h2 {
-	text-align : center;
+.catalog-item.hide {
+	display: none;
 }
 /*__________КОНТАКТЫ___________*/
 .cnct h2 {
@@ -275,4 +240,14 @@ min-height: 140px;
 	width : 900px;
 	height : 450px;
 	margin: 0 auto;
+}
+/*______________cross______________*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+@media screen and (max-width: 400px) {
+  .prisl h2 {
+    font-size: 2.5em;
+  }
 }

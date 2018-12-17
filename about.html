@@ -39,8 +39,8 @@
                     <li><a href="contact.html">Контакты</a></li>
                 </ul>
 				<ul class="nav navbar-nav pull-left">
-				<li><a href="#reg">Регистрация</a></li>
-				<li><a href="#log">Вход</a></li>
+				<li><a href="javascript:void(0)" data-toggle="modal" data-target="#regModal">Регистрация</a></li>
+				<li><a href="javascript:void(0)" data-toggle="modal" data-target="#authModal">Вход</a></li>
 				</ul>
             </div>
             <!--/.nav-collapse -->
@@ -51,30 +51,85 @@
 		<h2> О нас </h2>
 		</div>
 		
-		<div class="a">
-			<div class="a1">
-				<img src="img/a1.jpg">
-			</div>
-				<div class="a2">
-					<h2>Мы —  Фонд помощи животным «Волгоградские хвостики». Существуем и развиваемся более 4 лет. Наш приют «родился» гораздо раньше Фонда. Изначально он был рассчитан всего на 20 мест, но количество животных, оказавшихся грустными и попавших к нам, возрастало. И вместо одного земельного участка, появилось два. Теперь на попечении приюта 25+ хвостика</h2>
+		<div class="container about-block">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<img src="img/a1.jpg">
 				</div>
+				<div class="col-sm-12 col-md-6">
+					<p>Мы —  Фонд помощи животным «Волгоградские хвостики». Существуем и развиваемся более 4 лет. Наш приют «родился» гораздо раньше Фонда. Изначально он был рассчитан всего на 20 мест, но количество животных, оказавшихся грустными и попавших к нам, возрастало. И вместо одного земельного участка, появилось два. Теперь на попечении приюта 25+ хвостика</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<p>Приют для осликов в Волгограде
+					содержится на частные пожертвования. А ухаживают, общаются, выгуливают подопечных приюта — волонтеры, добрые и заботливые. Все вместе мы создаем то место, где животные будут чувствовать себя защищенными и любимыми. Большинство осликов — старенькие и инвалиды. Но, благодаря работе волонтеров и помощи людей, любящих животных, созданы хорошие условия для проживания «особенных» питомцев.</p>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<img src="img/b.jpg">
+				</div>
+			</div>
 		</div>
 		
-		<div class="b">
-			<div class="b1">
-				<h2> Приют для осликов в Волгограде
-					содержится на частные пожертвования. А ухаживают, общаются, выгуливают подопечных приюта — волонтеры, добрые и заботливые. Все вместе мы создаем то место, где животные будут чувствовать себя защищенными и любимыми. Большинство осликов — старенькие и инвалиды. Но, благодаря работе волонтеров и помощи людей, любящих животных, созданы хорошие условия для проживания «особенных» питомцев.</h2>
-			</div>
-				<div class="b2">
-					<img src="img/b2.png">
-				</div>
-		</div>
-		
-		<div class="c">
+		<div class="container" style="background-color: peru;border-radius: 10px;">
 			<h2>До того, как двери нашего приюта распахнулись для его обитателей, была поставлена цель, — создать то место, где гости не будут расстраиваться, пугаться и плакать, а им захочется еще и еще приходить к нам в гости. Обстановка в нашем приюте дружная и веселая, а животные много общаются и гуляют. Для каждого хвостика, мы стараемся создавать индивидуальные условия, на основании особенностей здоровья и характера, а так же поведения.</h2>
 		</div>	
 		
 		<div class="fond">
 			<h2> Фонд защиты животных "Волгоградские Хвостики"© 2018 Все права защищены </h2>
 		</div>
-		
+		<!-- Modal -->
+	<div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Авторизация</h4>
+		  </div>
+		  <div class="modal-body">
+			<form>
+			  <div class="form-group">
+				<label for="exampleInputEmail1">Email</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				<label for="exampleInputPassword1">Пароль</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+			  </div>
+			  <button type="submit" class="btn btn-default">Войти</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+		  </div>
+		  <div class="modal-body">
+			<form>
+			  <div class="form-group">
+				<label for="exampleInputEmail1">Email</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			  </div>
+			  <div class="form-group">
+				<label for="exampleInputPassword1">Пароль</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+			  </div>			  
+			  <div class="form-group">
+				<label for="exampleInputPassword2">Подтверждение пароля</label>
+				<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Подтверждение пароля">
+			  </div>
+			  <button type="submit" class="btn btn-default">Зарегистрироваться</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
